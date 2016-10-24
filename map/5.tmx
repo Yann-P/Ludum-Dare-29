@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="80" height="50" tilewidth="10" tileheight="10">
+ <layer name="Calque de Tile 1" width="80" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztwQEBAAAAgJD+r+4ICgAAAAAAAAAAAAAAAAAAAGo+gAAB
+  </data>
+ </layer>
+ <objectgroup name="Calque d'objets 1" width="80" height="50">
+  <object type="spawn" x="770" y="270" width="20" height="20"/>
+  <object x="500" y="0" width="50" height="180"/>
+  <object x="250" y="180" width="300" height="50"/>
+  <object x="150" y="80" width="230" height="30"/>
+  <object x="80" y="180" width="110" height="210"/>
+  <object x="80" y="390" width="670" height="40"/>
+  <object x="640" y="180" width="110" height="210"/>
+  <object type="gs" x="80" y="450" width="20" height="20"/>
+  <object type="shadow3" x="440" y="90" width="20" height="20"/>
+  <object type="ps" x="250" y="260" width="20" height="20"/>
+  <object type="ph" x="360" y="320" width="20" height="20"/>
+  <object type="ps" x="460" y="260" width="20" height="20"/>
+  <object type="ph" x="580" y="320" width="20" height="20"/>
+  <object type="gs" x="730" y="450" width="20" height="20"/>
+  <object type="shadow1" x="420" y="450" width="20" height="20"/>
+  <object type="teleport" x="380" y="0" width="120" height="20"/>
+  <object x="350" y="0" width="30" height="30"/>
+  <object type="shadow1" x="250" y="320" width="20" height="20"/>
+  <object type="shadow1" x="460" y="320" width="20" height="20"/>
+  <object type="shadow2" x="680" y="70" width="20" height="20"/>
+ </objectgroup>
+</map>

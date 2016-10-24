@@ -1,0 +1,78 @@
+html {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+	margin: 0;
+	background: #000;
+    font-family: arial;
+    color: white;
+}
+
+#container, #credits {
+	width: 800px;
+	margin: 0 auto;
+
+}
+#container {
+    margin-top: 50px;
+    height: 500px;
+    background: black;
+}
+
+#credits {
+    margin-top: 10px;
+    color: #444;
+    font-size: 13px;
+}
+
+#credits b {
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255,0.5);
+}
+
+
+#overlay {
+    background: black;
+}
+
+#respawn {
+    cursor: pointer;
+    background: url('../assets/gameover.png');
+}
+
+#congratz {
+    background: url('../assets/congratz.png');
+}
+
+#intro1 {
+    background: url('../assets/intro1.png');
+}
+
+#intro2 {
+    background: url('../assets/intro2.png');
+}
+
+.state, #texts {
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    font-size: 30px;
+}
+
+.text {
+    position: absolute;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5)
+}
+
+.state {
+    display: none;
+}
+
+#entities {
+    border: 1px solid blue;
+}

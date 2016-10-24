@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Light eater</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div id="container">
+		<canvas class="state" id="game" width="800" height="500"></canvas>
+        <div id="respawn" class="state"></div>
+        <div id="intro1" class="state"></div>
+        <div id="intro2" class="state"></div>
+
+        <div id="congratz" class="state"></div>
+        <div id="overlay" class="state"></div>
+        <div id="texts"></div>
+	</div>
+    <div id="credits">
+        Controls : <b>Mouse &amp; "X" key</b>. Hold click to move. Press X if you want to skip the intro.<br>
+        Created by Yann P. (@Cawrtz) in 48h for Ludum Dare 29.<br>
+        <b>Have fun!!</b>
+    </div>
+    <div style="opacity:0;height:0;overflow:hidden;">
+        <img src="assets/basicgun.png">
+        <img src="assets/big-potion.png">
+        <img src="assets/boss.png">
+        <img src="assets/boss-projectile.png">
+        <img src="assets/congratz.png">
+        <img src="assets/fireball.png">
+        <img src="assets/fireball-launcher.png">
+        <img src="assets/flame.png">
+        <img src="assets/gameover.png">
+        <img src="assets/half-heart.png">
+        <img src="assets/heart.png">
+        <img src="assets/intro1.png">
+        <img src="assets/intro2.png">
+        <img src="assets/laser.png">
+        <img src="assets/lasergun.png">
+        <img src="assets/player.png">
+        <img src="assets/shadow1.png">
+        <img src="assets/shadow2.png">
+        <img src="assets/shadow3.png">
+        <img src="assets/small-potion.png">
+    </div>
+
+    <script type="text/javascript" src="js/lib/sound.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/data.js?v=7"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+</body>
+</html>

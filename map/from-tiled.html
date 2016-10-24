@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<input type="text" id="a"><input type="button" id="c">
+<textarea rows="50" cols="50" id="b"></textarea>
+
+<script type="text/javascript">
+	function getLevel(tiled) {
+		var result = {playerPos:null, walls:[], powerups:[], monsters:[], teleporters:[]}
+		var map = tiled.layers[1].objects
+
+		for(var i = 0; i < map.length; i++) {
+			var o = map[i];
+			if(o.type == "")
+				result.walls.push([o.x, o.y, o.width, o.height])
+			if(o.type == "teleport")
+				result.teleporters.push([1, o.x, o.y, o.width, o.height, 0, 0])
+			if(o.type == "spawn")
+				result.playerPos = [o.x, o.y]
+			if(o.type == "shadow1")
+				result.monsters.push(['ld.ENTITY.SHADOW1', o.x, o.y])
+			if(o.type == "shadow2")
+				result.monsters.push(['ld.ENTITY.SHADOW2', o.x, o.y])
+			if(o.type == "shadow3")
+				result.monsters.push(['ld.ENTITY.SHADOW3', o.x, o.y])
+			if(o.type == "ph")
+				result.powerups.push(['ld.ENTITY.SMALL_HEALTH_POTION', o.x, o.y])
+			if(o.type == "gh")
+				result.powerups.push(['ld.ENTITY.BIG_HEALTH_POTION', o.x, o.y])
+			if(o.type == "ps")
+				result.powerups.push(['ld.ENTITY.SMALL_SPEED_POTION', o.x, o.y])
+			if(o.type == "gs")
+				result.powerups.push(['ld.ENTITY.BIG_SPEED_POTION', o.x, o.y])
+			if(o.type == "pst")
+				result.powerups.push(['ld.ENTITY.SMALL_STRENGTH_POTION', o.x, o.y])
+			if(o.type == "gst")
+				result.powerups.push(['ld.ENTITY.BIG_STRENGTH_POTION', o.x, o.y])
+
+		}
+
+
+
+		return JSON.stringify(result).replace(/"/g, '')
+	}
+
+	window.onload = function() {
+		document.getElementById('c').onclick = function() {
+
+			document.getElementById('b').innerHTML = getLevel(JSON.parse(document.getElementById('a').value))
+		}
+	}
+
+</script>
+</body>
+</html>

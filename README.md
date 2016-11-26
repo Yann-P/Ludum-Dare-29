@@ -4,6 +4,9 @@
 * Vanilla - no framework used
 * COMPO Entry
 
+### Licence
+[Creative Commons BY NC SA (attribution, no commercial use, share alike)](https://creativecommons.org/licenses/by-nc-sa/2.0/)
+
 ### Contributors
 * Code, Art: Yann Pellegrini
 

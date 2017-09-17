@@ -4,11 +4,11 @@
 * Vanilla - no framework used
 * COMPO Entry
 
-### Licence
+### Licence
 [Creative Commons BY NC SA (attribution, no commercial use, share alike)](https://creativecommons.org/licenses/by-nc-sa/2.0/)
 
-### Contributors
-* Code, Art: Yann Pellegrini
+### Contributors
+* Code, Art: [Yann Pellegrini](https://yann-p.fr)
 
 Warning: this is code written for a jam in 48h and it may hurt your eyes ;)
 
